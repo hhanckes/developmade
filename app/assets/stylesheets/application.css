@@ -13,9 +13,22 @@
  *= require_tree .
  */
 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/fonts/glyphicons-halflings-regular.eot');
+  src: url('/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+       url('/fonts/glyphicons-halflings-regular.woff') format('woff'), 
+       url('/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+       url('/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('/fonts/oswald/oswald_light.otf') format("opentype");
+}
+
 #origin {
 	border-top:1px solid #ddd;
-	border-bottom:1px solid #ddd;
 }
 #drop {
 	border:1px solid #ddd;
@@ -25,7 +38,6 @@
 	min-height: 500px;
 } 
 .list-group li {
-
 	list-style-type: none;
 	padding-right: 20px;
 	cursor:pointer;
