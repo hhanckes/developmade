@@ -1,0 +1,20 @@
+<div class="element_detail" id="element_<%= id.to_s %>" style="display:none">
+	<ul class="nav nav-tabs" style="margin-bottom:20px">
+		<li role="presentation" style="cursor:pointer" id="attributes_tab_element_<%= id.to_s %>" class="tab" show="attributes_element_<%= id.to_s %>">
+			<a href="#">Attributes</a>
+		</li>
+		<li role="presentation" style="cursor:pointer" id="other_tab_element_<%= id.to_s %>" class="tab" show="other_element_<%= id.to_s %>">
+			<a href="#">Other</a>
+		</li>
+	</ul>
+	<div class="element_information">
+		<div id="attributes_element_<%= id.to_s %>" class="tab_info">
+			Hola: <%= text_field_tag :text1, 'element_'+id.to_s %><br />
+			Chao: <%= text_field_tag :text2 %>
+		</div>
+		<ul id="other_element_<%= id.to_s %>" class="tab_info" style="display:none">
+			<li>step 1</li>
+			<li>step 2</li>
+		</ul>
+	</div>
+</div>

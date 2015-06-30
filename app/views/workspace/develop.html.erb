@@ -1,0 +1,34 @@
+<h1>Workspace#develop</h1>
+<div id="row">
+	<div class="col-md-2" id="origin">
+	    <ul id="sort1" class="list-group">
+	      <li title="Span one" class="list-group-item element" chosen="false" show="element_1"><span title="span" class='draggable'>Span 1 sample text</span></li>
+	      <li title="Image one" class="list-group-item element" chosen="false" show="element_2"><%= image_tag '140x100.png', title: 'one', class: 'draggable' %></li>
+	      <li title="Image two" class="list-group-item element" chosen="false" show="element_3"><%= image_tag '140x100.png', title: 'two', class: 'draggable' %></li>
+	    </ul>
+	</div>
+	<div class="col-md-4" id="drop">
+      <ul id="sort2" class="list-group">
+      </ul>
+	</div>
+	<div class="col-md-3">
+		<div id="overall">
+			<ul class="nav nav-tabs" style="margin-bottom:20px">
+				<li id="history_tab" role="presentation" class="tab active" show="history"><a href="#">History</a></li>
+				<li id="specs_tab" role="presentation" class="tab" show="specs"><a href="#">Specs</a></li>
+				<li id="recipe_tab" role="presentation" class="tab" show="recipe"><a href="#">Recipe</a></li>
+			</ul>
+			<ul id="history" class="tab_info"></ul>
+			<ul id="specs" class="tab_info" style="display:none">
+				<li>spec 1</li>
+			</ul>
+			<ul id="recipe" class="tab_info" style="display:none">
+				<li>step 1</li>
+				<li>step 2</li>
+			</ul>
+		</div>
+		<%= render 'element_details', id: 1 %>
+		<%= render 'element_details', id: 2 %>
+		<%= render 'element_details', id: 3 %>
+	</div>
+</div>
